@@ -1,0 +1,28 @@
+.navbar{
+    width: 95vw;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 999;
+    position: relative;
+    img{
+        margin-left: 2vw;
+        width: 10vw;
+    }
+    .links{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5vw;
+        font-weight: bolder;
+        list-style-type: none;
+        cursor: pointer;
+        li a{
+        text-decoration: none;
+        color: #222F57;
+        }
+    }
+}

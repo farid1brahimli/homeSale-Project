@@ -1,0 +1,52 @@
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .first-sec {
+        width: 100%;
+        height: 500px;
+        .kitchen-img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); // qaranlıq şəffaf qat
+            backdrop-filter: blur(2px);
+        }
+        .h1s {
+            position: absolute;
+            top: 0;
+            z-index: 999;
+            color: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .first{
+                font-weight: 200;
+                font-size: 50px;
+            }
+            .second{
+                font-weight: 300;
+                font-size: 80px;
+            }
+        }
+
+    }
+
+}
