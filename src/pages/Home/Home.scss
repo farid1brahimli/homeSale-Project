@@ -3,8 +3,8 @@
 .home{
     @extend .pages-style;
     .second-sec{
-        position: absolute;
+        position: relative;
         width: 75%;
-        top: 100%;
+        // top: 100%;
     }
 }

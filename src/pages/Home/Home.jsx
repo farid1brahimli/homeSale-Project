@@ -12,18 +12,39 @@ const Home = () => {
             <section className='second-sec'>
                 <div className="filter">
                     <form action="">
-                        <label htmlFor="">Location</label>
-                        <select name="" id="">
-                            <option value="">Azerbaijan</option>
-                            <option value="">Turkey</option>
-                            <option value="">Georgia</option>
-                        </select>
-                        <label htmlFor=""></label>
-                        <select name="" id="">
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
+                        <div className="location">
+                            <label htmlFor="">Location</label>
+                            <select name="" id="">
+                                <option value="">Azerbaijan</option>
+                                <option value="">Turkey</option>
+                                <option value="">Georgia</option>
+                            </select>
+                        </div>
+                        <div className="prop-type">
+                            <label htmlFor="">Property Type</label>
+                            <select name="" id="">
+                                <option value="">House</option>
+                                <option value="">Resort</option>
+                                <option value="">Hotel</option>
+                            </select>
+                        </div>
+                        <div className="bedrooms">
+                            <label htmlFor="">Bedrooms</label>
+                            <div className="bed1">
+                                <label htmlFor="">1</label>
+                                <input type="radio" />
+                            </div>
+                             <div className="bed2">
+                                <label htmlFor="">2</label>
+                                <input type="radio" />
+                            </div> <div className="bed1">
+                                <label htmlFor="">1</label>
+                                <input type="radio" />
+                            </div> <div className="bed1">
+                                <label htmlFor="">1</label>
+                                <input type="radio" />
+                            </div>
+                        </div>
                     </form>
                 </div>
             </section>
