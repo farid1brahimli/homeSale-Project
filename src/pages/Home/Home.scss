@@ -1,10 +1,91 @@
 @import '../../scss/shared';
 
-.home{
-    @extend .pages-style;
-    .second-sec{
-        position: relative;
-        width: 75%;
-        // top: 100%;
+.container {
+    width: 100%;
+
+    .home {
+        @extend .pages-style;
+
+        .second-sec {
+            position: absolute;
+            bottom: -9%;
+            width: 75vw;
+            background-color: white;
+            border-radius: 8px;
+            padding-left: 2.2vw;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            .filter form {
+                display: flex;
+                justify-content: space-between;
+
+                .location,
+                .prop-type,
+                .Bedrooms,
+                .Bathrooms {
+                    width: 25%;
+                    padding: 1.5vw;
+
+                    label {
+                        margin-bottom: 1vw;
+                        display: flex;
+                        color: grey
+                    }
+                }
+
+                select {
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-color: white;
+                    font-size: 16px;
+                }
+            }
+
+            .searchBtn {
+                padding: 0 4vw;
+                background-color: #8AD144;
+                border: 1px solid white;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                color: white;
+                gap: 1vw;
+                font-size: 1.5vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .third-sec {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        #homeCards {
+            width: 75vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 10% 0 5%;
+        }
+
+    }
+
+    .fourth-sec {
+        width: 100%;
+
+        .fourth-sec-container {
+            overflow: hidden;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: right;
+        }
     }
 }

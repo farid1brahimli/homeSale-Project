@@ -1,6 +1,6 @@
 import './Welcome.scss';
 
-const Welcome = ({text1, text2}) => {
+const Welcome = ({ text1, text2 }) => {
     return (
         <section className='first-sec'>
             <img className='kitchen-img' src="./kitchen.webp" alt="kitchen" />

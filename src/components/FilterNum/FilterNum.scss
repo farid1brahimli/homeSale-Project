@@ -1,0 +1,23 @@
+.radio-group {
+  display: flex;
+}
+
+.radio-label {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #7a7aa4;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.1vw;
+
+  &:hover{
+    background-color: #8AD144;
+  }
+
+  span {
+    color: white;
+  }
+}
