@@ -2,6 +2,7 @@ import FilterNum from '../../components/FilterNum/FilterNum';
 import Header from '../../components/Header/Header';
 import Welcome from '../../components/WelcomeSection/Welcome';
 import { FaSearch } from 'react-icons/fa';
+import { FiSend } from 'react-icons/fi';
 import HomeCard from '../../components/HomeCard/HomeCard';
 import './Home.scss';
 
@@ -52,17 +53,32 @@ const Home = () => {
                 <div id="homeCards">
                     <HomeCard image={"./resort.jpg"} />
                     <HomeCard image={"./hotel.jpg"} />
-                    <HomeCard image={"./house.jpg"}  />
+                    <HomeCard image={"./house.jpg"} />
                     <HomeCard image={"./hotel2.webp"} />
                     <HomeCard image={"./resort2.jpg"} />
-                    <HomeCard image={"./house2.jpg"}  />
+                    <HomeCard image={"./house2.jpg"} />
                 </div>
             </section>
             <section className='fourth-sec'>
                 <div className="fourth-sec-container">
                     <img src="./yardWall.jpeg" alt="" />
+                    <div className="fourth-sec-carusel">
+                        <div className="carusel">
+
+                        </div>
+                    </div>
                 </div>
-                
+            </section>
+            <section className='fifth-sec'>
+                <div className="input">
+                    <img src="./send.png" alt="" />
+                    <p>Join our mailing to get weekly updates on <br />
+                        our exclusive deals.</p>
+                        <form action="">
+                            <input type="mail" placeholder='Email Address' />
+                            <button><span>Subscribe!</span></button>
+                        </form>
+                </div>
             </section>
         </div>
     )

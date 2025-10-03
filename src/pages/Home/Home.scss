@@ -75,17 +75,82 @@
 
     .fourth-sec {
         width: 100%;
+        position: relative;
 
         .fourth-sec-container {
             overflow: hidden;
 
+
+
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                object-position: right;
+            }
+
         }
 
-        img {
+        .fourth-sec-carusel {
+            position: absolute;
+            top: 50%;
             width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            object-position: right;
+            display: flex;
+            justify-content: center;
+
+            .carusel {
+                width: 75vw;
+                display: flex;
+                justify-content: flex-end;
+
+            }
+        }
+    }
+
+    .fifth-sec {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background-color: #30304E;
+
+        .input {
+            text-align: center;
+            height: 60%;
+
+            p {
+                padding: 1vw 0;
+                font-size: 1.5vw;
+                color: white;
+            }
+
+            form {
+                margin-top: 1vw;
+
+                input {
+                    width: 25vw;
+                    margin-right: 2vw;
+                    padding: 1.1vw;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    &::placeholder{
+                        font-size:1.1vw ;
+                    }
+                }
+
+                button {
+                    width: 12.5vw;
+                    padding: 0.9vw;
+                    border: 1px solid #8AD144;
+                    border-radius: 5px;
+                    background-color: #8AD144;
+                    span{
+                        color: white;
+                        font-size: 1.2vw;
+                    }
+                }
+            }
         }
     }
 }

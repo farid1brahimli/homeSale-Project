@@ -1,0 +1,27 @@
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  background-color: #6dc048;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left {
+  position: absolute;
+  left: 10px;
+}
+
+.right {
+  position: absolute;
+  right: 10px;
+}
