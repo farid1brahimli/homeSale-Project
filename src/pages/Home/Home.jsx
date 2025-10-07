@@ -2,9 +2,10 @@ import FilterNum from '../../components/FilterNum/FilterNum';
 import Header from '../../components/Header/Header';
 import Welcome from '../../components/WelcomeSection/Welcome';
 import { FaSearch } from 'react-icons/fa';
-import { FiSend } from 'react-icons/fi';
+import DoneIcon from '@mui/icons-material/Done';
 import HomeCard from '../../components/HomeCard/HomeCard';
 import './Home.scss';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
     return (
@@ -74,12 +75,62 @@ const Home = () => {
                     <img src="./send.png" alt="" />
                     <p>Join our mailing to get weekly updates on <br />
                         our exclusive deals.</p>
-                        <form action="">
-                            <input type="mail" placeholder='Email Address' />
-                            <button><span>Subscribe!</span></button>
-                        </form>
+                    <form action="">
+                        <input type="mail" placeholder='Email Address' />
+                        <button><span>Subscribe!</span></button>
+                    </form>
                 </div>
             </section>
+            <section className='sixth-sec'>
+                <div className="sixth-sec-skills">
+                    <div className='sixth-sec-text'>
+                        <h1 className='firstH1'>Why choose homes?</h1>
+                        <h1 className='secondH1'>Because we we are the best in
+                            the business.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id est nec nisl tristique dignissim semper sed diam. Donec vulputate neque in massa hendrerit, non dignissim ipsum varius. Mauris dignissim libero ipsum, nec molestie nulla molestie at. Nam imperdiet hendrerit finibus. Sed porttitor ultricies sagittis. Nullam lobortis nec quam vitae venenatis.</p>
+                    </div>
+                    <div className='sixth-sec-done'>
+                        <div>
+                            <DoneIcon style={{ color: 'green', fontWeight: 'bold', fontSize: '32px' }} />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                         <div>
+                            <DoneIcon style={{ color: 'green', fontWeight: 'bold', fontSize: '32px' }} />
+                            <p>Praesent tincidunt diam in ante faucibus tristique.</p>
+                        </div>
+                         <div>
+                            <DoneIcon style={{ color: 'green', fontWeight: 'bold', fontSize: '32px' }} />
+                            <p>Vivamus id nisl sed mi varius lobortis.</p>
+                        </div>
+                         <div>
+                            <DoneIcon style={{ color: 'green', fontWeight: 'bold', fontSize: '32px' }} />
+                            <p>Suspendisse sit amet erat placerat, molestie neque id.</p>
+                        </div>
+                         <div>
+                            <DoneIcon style={{ color: 'green', fontWeight: 'bold', fontSize: '32px' }} />
+                            <p>Fusce pretium libero sit amet ipsum posuere pretium.</p>
+                        </div>
+                        <div>
+                            <DoneIcon style={{ color: 'green', fontWeight: 'bold', fontSize: '32px' }} />
+                            <p>Praesent tincidunt diam in ante faucibus tristique.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section className='seventh-sec'>
+                <p>Don’t forget to view us on Github <a href="https://github.com/farid1brahimli">@farid1brahimli</a></p>
+            </section>
+            <section className='eighth-sec'>
+                <img src="./resort2.jpg" alt="house" />
+                <img src="./house.jpg" alt="house" />
+                <img src="./hotel.jpg" alt="house" />
+                <img src="./resort.jpg" alt="house" />
+                <img src="./house2.jpg" alt="house" />
+            </section>
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     )
 }

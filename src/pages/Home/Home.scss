@@ -122,10 +122,13 @@
             p {
                 padding: 1vw 0;
                 font-size: 1.5vw;
+                font-weight: 500;
                 color: white;
             }
 
             form {
+                display: flex;
+                align-items: center;
                 margin-top: 1vw;
 
                 input {
@@ -134,8 +137,9 @@
                     padding: 1.1vw;
                     border: 1px solid white;
                     border-radius: 5px;
-                    &::placeholder{
-                        font-size:1.1vw ;
+
+                    &::placeholder {
+                        font-size: 1.1vw;
                     }
                 }
 
@@ -145,12 +149,99 @@
                     border: 1px solid #8AD144;
                     border-radius: 5px;
                     background-color: #8AD144;
-                    span{
+
+                    span {
                         color: white;
                         font-size: 1.2vw;
                     }
                 }
             }
         }
+    }
+
+    .sixth-sec {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 5vw 0;
+
+        .sixth-sec-skills {
+            width: 75vw;
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+
+            .sixth-sec-text {
+                width: 50%;
+
+                h1 {
+                    font-size: 2.5vw;
+                    font-weight: 450;
+                    margin-bottom: 0.6vw;
+                }
+
+                .secondH1 {
+                    color: #6F6F8A;
+                }
+
+                p {
+                    word-spacing: 0.1vw;
+                    line-height: 1.5vw;
+                    color: #6F6F8A;
+                    font-weight: 250;
+                }
+            }
+
+            .sixth-sec-done {
+                width: 50%;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.5vw 0;
+                    gap: 1.5vw;
+
+                    p {
+                        font-size: 1.2vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .seventh-sec {
+        width: 100%;
+        height: 120px;
+        background-color: #F8F8F9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-size: 2.3vw;
+        }
+
+        a {
+            cursor: pointer;
+        }
+    }
+
+    .eighth-sec {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            width: 20%;
+        }
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #30304E;
+        padding: 2vw 0;
     }
 }

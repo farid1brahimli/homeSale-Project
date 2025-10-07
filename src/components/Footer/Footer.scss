@@ -1,0 +1,33 @@
+.footer {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 3vw;
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 4vw 0;
+        .left-footer,
+        .middle-footer,
+        .right-footer{
+            width: 32%;
+        }
+    }
+
+    .copyRight {
+        font-size: 0.9vw;
+        color: #4f4f67;
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
