@@ -14,7 +14,8 @@ const Footer = () => {
     const iconStyle = {
         color: "white",
         fontSize: "1vw",
-        margin: "10px"
+        margin: "1vw",
+        cursor: "pointer"
     };
 
     return (
@@ -25,11 +26,21 @@ const Footer = () => {
                     <h3>About Homes</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend tristique venenatis. Maecenas a rutrum tellus nam vel semper nibh.</p>
                     <div>
-                        <FaFacebookF style={iconStyle} />
-                        <FaInstagram style={iconStyle} />
-                        <FaXTwitter style={iconStyle} />
-                        <SiThreads style={iconStyle} />
-                        <FaTiktok style={iconStyle} />
+                        <a href="https://facebook.com">
+                             <FaFacebookF style={iconStyle} />
+                        </a>
+                        <a href="https://instagram.com">
+                            <FaInstagram style={iconStyle} />
+                        </a>
+                       <a href="https://x.com">
+                         <FaXTwitter style={iconStyle} />
+                       </a>
+                        <a href="https://threads.com">
+                            <SiThreads style={iconStyle} />
+                        </a>
+                        <a href="https://tiktok.com">
+                            <FaTiktok style={iconStyle} />
+                        </a>
                     </div>
                 </div>
                 <div className='middle-footer'>
@@ -43,11 +54,11 @@ const Footer = () => {
                             </p>
                             <div className='first-blog-icons'>
                                 <div>
-                                    <MdOutlineAccessTime />
+                                    <MdOutlineAccessTime size={"1.5vw"} color='white' />
                                     <p>5 min</p>
                                 </div>
                                 <div>
-                                    <IoChevronForwardCircleOutline/>
+                                    <IoChevronForwardCircleOutline  size={"1.5vw"} color='white'/>
                                     <p>Read More</p>
                                 </div>
                             </div>
@@ -60,11 +71,11 @@ const Footer = () => {
                                 your next house.</p>
                             <div className='first-blog-icons'>
                                 <div>
-                                    <MdOutlineAccessTime />
+                                    <MdOutlineAccessTime size={"1.5vw"} color='white' />
                                     <p>5 min</p>
                                 </div>
                                 <div>
-                                    <IoChevronForwardCircleOutline/>
+                                    <IoChevronForwardCircleOutline size={"1.5vw"} color='white'/>
                                     <p>Read More</p>
                                 </div>
                             </div>
@@ -74,19 +85,19 @@ const Footer = () => {
                 <div className='right-footer'>
                     <h3>Get In Touch</h3>
                     <div>
-                        <GoLocation/>
+                        <GoLocation color='white' size={'1.4vw'}/>
                         <p>132 Liberty Streetelit, Plano, Texas</p>
                     </div>
                     <div>
-                        <HiOutlineMail/>
+                        <HiOutlineMail color='white' size={'1.4vw'}/>
                         <p>hello@home.com</p>
                     </div>
                     <div>
-                        <MdCall/>
+                        <MdCall color='white' size={'1.4vw'}/>
                         <p>214-805-4428</p>
                     </div>
-                    <p>Monday – Friday: 9 am – 5 pm</p>
-                    <p>Saturday: 9 am – 1pm</p>
+                    <p className='date1'>Monday – Friday: 9 am – 5 pm</p>
+                    <p className='date2'>Saturday: 9 am – 1pm</p>
                 </div>
             </div>
             <p className='copyRight'>Copyright ©2025 All rights reserved | This template is made with  <FavoriteBorderIcon fontSize='5px' /> by <a target='blank' href="https://colorlib.com"> Colorlib</a></p>
