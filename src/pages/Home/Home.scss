@@ -1,247 +1,505 @@
-@import '../../scss/shared';
+@import "../../scss/shared";
 
 .container {
+  width: 100%;
+
+  .home {
+    @extend .pages-style;
+
+    .second-sec {
+      position: absolute;
+      bottom: -9%;
+      width: 75vw;
+      background-color: white;
+      border-radius: 8px;
+      padding-left: 2.2vw;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      .filter form {
+        display: flex;
+        justify-content: space-between;
+
+        .location,
+        .prop-type,
+        .Bedrooms,
+        .Bathrooms {
+          width: 25%;
+          padding: 1.5vw;
+
+          label {
+            margin-bottom: 1vw;
+            display: flex;
+            color: grey;
+          }
+        }
+
+        select {
+          padding: 5px 10px;
+          border-radius: 5px;
+          background-color: white;
+          font-size: 16px;
+        }
+      }
+
+      .searchBtn {
+        padding: 0 4vw;
+        background-color: #8ad144;
+        border: 1px solid white;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        color: white;
+        gap: 1vw;
+        font-size: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .third-sec {
     width: 100%;
+    display: flex;
+    justify-content: center;
 
-    .home {
-        @extend .pages-style;
+    #homeCards {
+      width: 75vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 10% 0 5%;
+    }
+  }
 
-        .second-sec {
-            position: absolute;
-            bottom: -9%;
-            width: 75vw;
-            background-color: white;
-            border-radius: 8px;
-            padding-left: 2.2vw;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .fourth-sec {
+    width: 100%;
+    position: relative;
 
-            .filter form {
-                display: flex;
-                justify-content: space-between;
+    .fourth-sec-container {
+      overflow: hidden;
 
-                .location,
-                .prop-type,
-                .Bedrooms,
-                .Bathrooms {
-                    width: 25%;
-                    padding: 1.5vw;
-
-                    label {
-                        margin-bottom: 1vw;
-                        display: flex;
-                        color: grey
-                    }
-                }
-
-                select {
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                    background-color: white;
-                    font-size: 16px;
-                }
-            }
-
-            .searchBtn {
-                padding: 0 4vw;
-                background-color: #8AD144;
-                border: 1px solid white;
-                border-top-right-radius: 8px;
-                border-bottom-right-radius: 8px;
-                color: white;
-                gap: 1vw;
-                font-size: 1.5vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-
+      img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: right;
+      }
     }
 
-    .third-sec {
-        width: 100%;
+    .fourth-sec-carusel {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .carusel {
+        width: 75vw;
         display: flex;
-        justify-content: center;
-
-        #homeCards {
-            width: 75vw;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 10% 0 5%;
-        }
-
+        justify-content: flex-end;
+      }
     }
+  }
 
-    .fourth-sec {
-        width: 100%;
-        position: relative;
+  .fifth-sec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #30304e;
 
-        .fourth-sec-container {
-            overflow: hidden;
+    .input {
+      text-align: center;
+      height: 60%;
 
+      p {
+        padding: 1vw 0;
+        font-size: 1.5vw;
+        font-weight: 500;
+        color: white;
+      }
 
-
-            img {
-                width: 100%;
-                height: 100vh;
-                object-fit: cover;
-                object-position: right;
-            }
-
-        }
-
-        .fourth-sec-carusel {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            .carusel {
-                width: 75vw;
-                display: flex;
-                justify-content: flex-end;
-
-            }
-        }
-    }
-
-    .fifth-sec {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-        background-color: #30304E;
-
-        .input {
-            text-align: center;
-            height: 60%;
-
-            p {
-                padding: 1vw 0;
-                font-size: 1.5vw;
-                font-weight: 500;
-                color: white;
-            }
-
-            form {
-                display: flex;
-                align-items: center;
-                margin-top: 1vw;
-
-                input {
-                    width: 25vw;
-                    margin-right: 2vw;
-                    padding: 1.1vw;
-                    border: 1px solid white;
-                    border-radius: 5px;
-
-                    &::placeholder {
-                        font-size: 1.1vw;
-                    }
-                }
-
-                button {
-                    width: 12.5vw;
-                    padding: 0.9vw;
-                    border: 1px solid #8AD144;
-                    border-radius: 5px;
-                    background-color: #8AD144;
-
-                    span {
-                        color: white;
-                        font-size: 1.2vw;
-                    }
-                }
-            }
-        }
-    }
-
-    .sixth-sec {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 5vw 0;
-
-        .sixth-sec-skills {
-            width: 75vw;
-            display: flex;
-            align-items: center;
-            gap: 2vw;
-
-            .sixth-sec-text {
-                width: 50%;
-
-                h1 {
-                    font-size: 2.5vw;
-                    font-weight: 450;
-                    margin-bottom: 0.6vw;
-                }
-
-                .secondH1 {
-                    color: #6F6F8A;
-                }
-
-                p {
-                    word-spacing: 0.1vw;
-                    line-height: 1.5vw;
-                    color: #6F6F8A;
-                    font-weight: 250;
-                }
-            }
-
-            .sixth-sec-done {
-                width: 50%;
-
-                div {
-                    display: flex;
-                    align-items: center;
-                    padding: 0.5vw 0;
-                    gap: 1.5vw;
-
-                    p {
-                        font-size: 1.2vw;
-                    }
-                }
-            }
-        }
-    }
-
-    .seventh-sec {
-        width: 100%;
-        height: 120px;
-        background-color: #F8F8F9;
+      form {
         display: flex;
         align-items: center;
-        justify-content: center;
+        margin-top: 1vw;
+
+        input {
+          width: 25vw;
+          margin-right: 2vw;
+          padding: 1.1vw;
+          border: 1px solid white;
+          border-radius: 5px;
+
+          &::placeholder {
+            font-size: 1.1vw;
+          }
+        }
+
+        button {
+          width: 12.5vw;
+          padding: 0.9vw;
+          border: 1px solid #8ad144;
+          border-radius: 5px;
+          background-color: #8ad144;
+
+          span {
+            color: white;
+            font-size: 1.2vw;
+          }
+        }
+      }
+    }
+  }
+
+  .sixth-sec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5vw 0;
+
+    .sixth-sec-skills {
+      width: 75vw;
+      display: flex;
+      align-items: center;
+      gap: 2vw;
+
+      .sixth-sec-text {
+        width: 50%;
+
+        h1 {
+          font-size: 2.5vw;
+          font-weight: 450;
+          margin-bottom: 0.6vw;
+        }
+
+        .secondH1 {
+          color: #6f6f8a;
+        }
 
         p {
-            font-size: 2.3vw;
+          word-spacing: 0.1vw;
+          line-height: 1.5vw;
+          color: #6f6f8a;
+          font-weight: 250;
         }
+      }
 
-        a {
-            cursor: pointer;
+      .sixth-sec-done {
+        width: 50%;
+
+        div {
+          display: flex;
+          align-items: center;
+          padding: 0.5vw 0;
+          gap: 1.5vw;
+
+          p {
+            font-size: 1.2vw;
+          }
         }
+      }
+    }
+  }
+
+  .seventh-sec {
+    width: 100%;
+    height: 120px;
+    background-color: #f8f8f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 2.3vw;
     }
 
-    .eighth-sec {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-
-        img {
-            width: 20%;
-        }
+    a {
+      cursor: pointer;
     }
+  }
 
-    footer {
-        width: 100%;
+  .eighth-sec {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      width: 20%;
+    }
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #30304e;
+    padding: 2vw 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    .home {
+      .second-sec {
+        bottom: -60%;
+        width: 90vw;
+        padding: 3vw 0 0;
+
+        .filter form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .location,
+          .prop-type,
+          .Bedrooms,
+          .Bathrooms {
+            width: 90%;
+            border-bottom: 1px solid rgb(211, 209, 209);
+            select {
+              width: 100%;
+              border: none;
+              padding-top: 2vw;
+              padding-left: 0;
+            }
+          }
+          .searchBtn {
+            width: 100%;
+            padding: 4vw;
+            font-size: 2.5vw;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 8px;
+          }
+        }
+      }
+    }
+    .third-sec {
+      #homeCards {
+        width: 90vw;
+        margin: 400px 0 5%;
+      }
+    }
+    .fifth-sec {
+      .input {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #30304E;
-        padding: 2vw 0;
+        img {
+          width: 15vw;
+        }
+        p {
+          padding: 3vw 0;
+          font-size: 3vw;
+        }
+
+        form {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 1vw;
+
+          input {
+            width: 50vw;
+            padding: 2vw;
+
+            &::placeholder {
+              font-size: 2vw;
+              font-weight: 300;
+            }
+          }
+
+          button {
+            width: 13vw;
+            padding: 2vw;
+            span {
+              font-size: 1.8vw;
+            }
+          }
+        }
+      }
     }
+    .sixth-sec {
+      padding: 10vw 4vw;
+
+      .sixth-sec-skills {
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .sixth-sec-text {
+          width: 100%;
+
+          h1 {
+            font-size: 5vw;
+          }
+
+          p {
+            font-size: 2.3vw;
+            padding-top: 1vw;
+            word-spacing: 0.2vw;
+            line-height: 3vw;
+          }
+        }
+
+        .sixth-sec-done {
+          width: 100%;
+
+          div {
+            gap: 3vw;
+            padding: 1vw 0;
+
+            p {
+              font-size: 2.5vw;
+            }
+          }
+        }
+      }
+    }
+    .seventh-sec {
+      padding: 12vw 0;
+      text-align: center;
+
+      p {
+        font-size: 5vw;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    .home {
+      .second-sec {
+        bottom: -50%;
+        width: 90vw;
+        padding: 3vw 0 0;
+
+        .filter form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .location,
+          .prop-type,
+          .Bedrooms,
+          .Bathrooms {
+            width: 90%;
+            border-bottom: 1px solid rgb(211, 209, 209);
+            select {
+              width: 100%;
+              border: none;
+              padding-top: 4vw;
+              padding-left: 0;
+            }
+          }
+          .searchBtn {
+            width: 100%;
+            padding: 6vw;
+            font-size: 3.5vw;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 8px;
+          }
+        }
+      }
+    }
+    .third-sec {
+      #homeCards {
+        width: 90vw;
+        margin: 370px 0 10%;
+      }
+    }
+    .fifth-sec {
+      height: 80vh;
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 20vw;
+        }
+        p {
+          padding: 5vw 0;
+          font-size: 5.5vw;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 3vw;
+          margin-top: 1vw;
+
+          input {
+            width: 90vw;
+            padding: 3.5vw;
+
+            &::placeholder {
+              font-size: 3vw;
+              font-weight: 300;
+            }
+          }
+
+          button {
+            width: 40vw;
+            padding: 3vw;
+            span {
+              font-size: 4vw;
+            }
+          }
+        }
+      }
+    }
+    .sixth-sec {
+      padding: 15vw 4vw;
+
+      .sixth-sec-skills {
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .sixth-sec-text {
+          width: 100%;
+
+          h1 {
+            font-size: 8vw;
+          }
+
+          p {
+            font-size: 3.5vw;
+            padding: 2vw 0;
+            word-spacing: 0.1vw;
+            line-height: 4.7vw;
+          }
+        }
+
+        .sixth-sec-done {
+          width: 100%;
+
+          div {
+            gap: 5vw;
+            padding: 1vw 0;
+
+            p {
+              font-size: 4vw;
+              line-height: 7vw;
+            }
+          }
+        }
+      }
+    }
+    .seventh-sec {
+      padding: 15vw 0;
+      text-align: center;
+
+      p {
+        font-size: 7vw;
+      }
+    }
+  }
 }

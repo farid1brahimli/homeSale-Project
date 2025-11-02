@@ -12,11 +12,11 @@ const HomeCard = ({ image }) => {
                     <h3>Country Style House with beautiful garden and terrace</h3>
                     <div className="place">
                         <div className="loc">
-                            <FaMapMarkerAlt />
+                            <FaMapMarkerAlt className='placeIcon' />
                             <p>Location</p>
                         </div>
                         <div className="onMap">
-                            <FaRegPaperPlane />
+                            <FaRegPaperPlane className='placeIcon' />
                             <p>Show on Map</p>
                         </div>
                     </div>
@@ -24,28 +24,28 @@ const HomeCard = ({ image }) => {
                         <div className="lotSize">
                             <p>Lot Size</p>
                             <div className='roomNum'>
-                                <PiRuler size={30} color='#A09EB7' />
+                                <PiRuler className='arcIcon' />
                                 <p>2561 sqft</p>
                             </div>
                         </div>
                         <div className="beds">
                             <p>Beds</p>
                             <div className='roomNum'>
-                                <FaBed size={30} color='#A09EB7' />
+                                <FaBed className='arcIcon' />
                                 <p>9</p>
                             </div>
                         </div>
                         <div className="baths">
                             <p>Baths</p>
                             <div className='roomNum'>
-                                <FaBath size={30} color='#A09EB7' />
+                                <FaBath className='arcIcon' />
                                 <p>2</p>
                             </div>
                         </div>
                         <div className="garage">
                             <p>Garage</p>
                             <div className='roomNum'>
-                                <PiGarageBold size={30} color='#A09EB7' />
+                                <PiGarageBold className='arcIcon' />
                                 <p>1</p>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ const HomeCard = ({ image }) => {
                     <div className="card-bottom">
                         <div className="sale">
                             <p>For Sale</p>
-                            <p className='price'>$345.000</p>
+                            <p className='price'>$345,000</p>
                         </div>
                         <button><p>View Property</p></button>
                     </div>

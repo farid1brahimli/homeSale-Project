@@ -6,18 +6,36 @@
   display: none;
   justify-content: center;
   align-items: center;
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 2rem;
+  height: 2rem;
   background-color: #7a7aa4;
   border-radius: 4px;
   cursor: pointer;
   margin-right: 0.1vw;
 
-  &:hover{
-    background-color: #8AD144;
+  &:hover {
+    background-color: #8ad144;
   }
 
   span {
     color: white;
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .radio-wrapper{
+    padding-top: 2vw;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .radio-group{
+    gap: 1px
+  }
+  .radio-wrapper{
+    padding-top: 2vw;
+  }
+ 
+}
+

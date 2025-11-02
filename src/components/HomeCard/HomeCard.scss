@@ -1,119 +1,288 @@
 .home-card {
-    width: 32%;
-    height: 38vw;
-    border-radius: 5px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background-color: white;
+  width: 32%;
+  height: 38vw;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: white;
+  // overflow: hidden;
+  margin-bottom: 2vw;
+
+  .card-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover; // şəkli konteynerin içində kəsərək yerləşdir
+    object-position: center; // şəkli mərkəzə al
+  }
+
+  .card-info {
+    padding: 0.8vw;
     overflow: hidden;
-    margin-bottom: 2vw;
 
-    .card-container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-
+    h3 {
+      font-size: 1.3vw;
+      font-weight: 400;
     }
 
+    .place {
+      display: flex;
+      gap: 1vw;
+      padding: 0.8vw 0;
+      border-bottom: 1px solid #d2d0ef;
+
+      .loc,
+      .onMap {
+        display: flex;
+        gap: 0.2vw;
+        cursor: pointer;
+
+        p {
+          font-size: 0.9vw;
+          font-weight: 500;
+          color: #a09eb7;
+        }
+      }
+    }
+
+    .arch {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8vw 0;
+      border-bottom: 1px solid #d2d0ef;
+
+      p {
+        font-size: 0.8vw;
+        font-weight: 400;
+        color: black;
+      }
+
+      .roomNum {
+        display: flex;
+        align-items: center;
+        gap: 0.5vw;
+        margin-top: 0.5vw;
+
+        p {
+          font-size: 1vw;
+        }
+      }
+    }
+
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 7vw;
+
+      p {
+        color: #a09eb7;
+      }
+
+      .price {
+        font-size: 2vw;
+        color: black;
+        margin-top: 0.3vw;
+      }
+
+      button {
+        padding: 1vw 2vw;
+        border: 2px solid #a09eb7;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        p {
+          font-size: 1.1vw;
+          font-weight: 500;
+        }
+
+        &:hover {
+          border: 2px solid #8ad144;
+          background-color: #8ad144;
+
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .home-card {
+    width: 47%;
+    height: auto;
+    margin-bottom: 5vw;
+    .card-container {
+      height: auto;
+    }
     img {
-        width: 100%;
-        height: 50%;
-        object-fit: cover; // şəkli konteynerin içində kəsərək yerləşdir
-        object-position: center; // şəkli mərkəzə al
+      width: 100%;
+      height: 38vw;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
     }
 
     .card-info {
-        padding: 0.8vw;
-        overflow: hidden;
+      padding: 2vw 2vw 0;
 
+      h3 {
+        font-size: 2.3vw;
+        font-weight: 500;
+      }
 
-        h3 {
-            font-weight: 400;
+      .place {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        padding: 2vw 0;
+        border-bottom: 1px solid #d2d0ef;
+
+        .loc,
+        .onMap {
+          gap: 0.5vw;
+
+          .placeIcon {
+            font-size: 2.3vw;
+          }
+          p {
+            font-size: 1.5vw;
+          }
+        }
+      }
+
+      .arch {
+        padding: 1.2vw 0;
+
+        p {
+          font-size: 1.5vw;
         }
 
-        .place {
-            display: flex;
-            gap: 1vw;
-            padding: 0.8vw 0;
-            border-bottom: 1px solid #d2d0ef;
+        .roomNum {
+          .arcIcon {
+            color: #a09eb7;
+            font-size: 3.7vw;
+          }
+          p {
+            font-size: 2vw;
+          }
+        }
+      }
 
-            .loc,
-            .onMap {
-                display: flex;
-                gap: 0.2vw;
-                cursor: pointer;
+      .card-bottom {
+        padding: 5vw 0;
 
-                p {
-                    font-size: 0.9vw;
-                    font-weight: 500;
-                    color: #A09EB7;
-                }
-            }
+        p {
+          font-size: 2vw;
+          color: #a09eb7;
         }
 
-        .arch {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.8vw 0;
-            border-bottom: 1px solid #d2d0ef;
-
-            p {
-                font-size: 0.8vw;
-                font-weight: 400;
-                color: black;
-            }
-
-            .roomNum {
-                display: flex;
-                align-items: center;
-                gap: 0.5vw;
-                margin-top: 0.5vw;
-
-                p {
-                    font-size: 1vw;
-                }
-            }
+        .price {
+          font-size: 3vw;
+          font-weight: 500;
         }
 
-        .card-bottom {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 7vw;
+        button {
+          padding: 2vw 3vw;
 
-            p {
-                color: #A09EB7;
-            }
-
-            .price {
-                font-size: 2vw;
-                color: black;
-                margin-top: 0.3vw;
-
-            }
-
-            button {
-                padding: 1vw 2vw;
-                border: 2px solid #A09EB7;
-                background-color: white;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: 0.2s;
-
-                p {
-                    font-size: 1.1vw;
-                    font-weight: 500;
-                }
-
-                &:hover {
-                    border: 2px solid #8AD144;
-                    background-color: #8AD144;
-
-                    p {
-                        color: white;
-
-                    }
-                }
-            }
+          p {
+            font-size: 2vw;
+          }
         }
+      }
     }
+  }
+}
+
+@media (max-width:480px) {
+    .home-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5vw;
+    .card-container {
+      height: auto;
+    }
+    img {
+      width: 100%;
+      height: 60vw;
+    }
+
+    .card-info {
+      padding: 3vw 3vw 0;
+
+      h3 {
+        font-size: 4vw;
+        font-weight: 500;
+      }
+
+      .place {
+        gap: 3vw;
+        padding: 3vw 0;
+
+        .loc,
+        .onMap {
+          gap: 1vw;
+
+          .placeIcon {
+            font-size: 3.5vw;
+          }
+          p {
+            font-size: 2.5vw;
+          }
+        }
+      }
+
+      .arch {
+        padding: 4vw 0;
+        justify-content: flex-start;
+        gap: 7vw;
+
+        p {
+          font-size: 2.5vw;
+        }
+
+        .roomNum {
+            gap: 1.5vw;
+          .arcIcon {
+            color: #a09eb7;
+            font-size: 5vw;
+          }
+          p {
+            font-size: 3vw;
+          }
+        }
+      }
+
+      .card-bottom {
+        padding: 8vw 0;
+
+        p {
+          font-size: 3.5vw;
+          color: #a09eb7;
+        }
+
+        .price {
+          font-size: 5vw;
+          font-weight: 500;
+        }
+
+        button {
+          padding: 3vw 5vw;
+
+          p {
+            font-size: 3.5vw;
+          }
+        }
+      }
+    }
+  }
 }

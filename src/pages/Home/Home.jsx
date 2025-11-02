@@ -24,7 +24,6 @@ const Home = () => {
                                     Location
                                 </label>
                                 <select name="" id="">
-
                                     <option value="">Azerbaijan  </option>
                                     <option value="">Turkey</option>
                                     <option value="">Georgia</option>
@@ -76,7 +75,7 @@ const Home = () => {
                     <p>Join our mailing to get weekly updates on <br />
                         our exclusive deals.</p>
                     <form action="">
-                        <input type="mail" placeholder='Email Address' />
+                        <input type="mail" placeholder='Email address' />
                         <button><span>Subscribe!</span></button>
                     </form>
                 </div>
