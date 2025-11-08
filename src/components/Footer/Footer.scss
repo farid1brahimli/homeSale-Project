@@ -10,13 +10,19 @@
     }
 
     .footer-container{
+        .respons-div{
+            display: flex;
+            justify-content: space-between;
+        }
         display: flex;
         justify-content: space-between;
         padding: 4vw 0;
-        .left-footer,
+        .left-footer{
+            width: 31%;
+        }
         .middle-footer,
         .right-footer{
-            width: 31%;
+            width: 50%;
         }
         h3{
             color: white;
@@ -32,6 +38,11 @@
                 margin-bottom: 1.5vw;
 
             }
+             .media-icon{
+                color: white;
+                font-size: 1vw;
+                margin-right: 2.5vw;
+            }
            
         }
         .middle-footer{
@@ -45,6 +56,7 @@
                 .first-blog{
                     p{
                         color: white;
+                        font-size: 1.2vw;
                         line-height: 1.5vw;
                     }
                 }
@@ -58,6 +70,10 @@
                         p{
                             color: #8e8ea7;
                             font-size: 0.8vw;
+                        }
+                         .latest-icon{
+                            color: white;
+                            font-size: 1.5vw;
                         }
                     }
                 }
@@ -79,6 +95,10 @@
                 align-items: center;
                 gap: 1vw;
                 margin-bottom: 0.7vw;
+                .contact-icon{
+                    color: white;
+                    font-size: 1.5vw;
+                }
                 p{
                     color: #8e8ea7;
                     font-size: 1vw;
@@ -95,7 +115,235 @@
         align-items: center;
 
         a {
+            color: #263F71;
             text-decoration: none;
         }
     }
+}
+
+@media (min-width:468px) and (max-width:992px) {
+    .footer {
+        padding-top: 2vw;
+
+    img {
+        width: 4vw;
+    }
+
+    .footer-container{
+        .respons-div{
+            display: flex;
+        }
+        padding: 6vw 3vw;
+        width: 100vw;
+        flex-direction: column;
+        .left-footer
+        {
+            width: 100%;
+        }
+        .middle-footer,
+        .right-footer{
+            width: 50%;
+        }
+        h3{
+            margin-bottom: 3vw;
+        }
+        .left-footer{
+            p{
+                font-size: 1.8vw;
+                line-height: 3vw;
+                margin-bottom: 1.5vw;
+
+            }
+            .media-icon{
+                color: white;
+                font-size: 1.7vw;
+                margin: 3vw 2.5vw 3vw 1vw;
+            }
+           
+        }
+        .middle-footer{
+            .latest-blog1,
+            .latest-blog2{
+                display: flex;
+                align-items: center;
+                padding-bottom: 3vw;
+                gap: 1vw;
+
+                img{
+                    width: 8vw;
+                    margin: 0 2vw 0 0;
+                }
+                .first-blog{
+                    p{
+                        font-size: 2vw;
+                        line-height: 2.5vw;
+                    }
+                }
+                .first-blog-icons{
+                    display: flex;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        p{
+                            font-size: 1.5vw;
+                        }
+                        .latest-icon{
+                            font-size: 2.2vw;
+                        }
+                    }
+                }
+            }
+        }
+        .right-footer{
+            h3{
+                margin-bottom: 3vw;
+            }
+            p.date1,
+            .date2{
+                    font-size: 1.7vw;
+                    margin-top: 0.5vw; 
+                }
+                p.date1{
+                    margin-top: 2.5vw;
+                }
+            div{
+                gap: 1.5vw;
+                margin-bottom: 1vw;
+                
+                .contact-icon{
+                    color: white;
+                    font-size: 2.2vw;
+                }
+                p{
+                    font-size: 1.7vw;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
+    .copyRight {
+        font-size: 1.3vw;
+        a{
+            color: #263F71;
+
+        }
+    }
+}
+}
+
+@media (max-width:468px) {
+    .footer {
+        width: 100vw;
+        padding-top: 5vw;
+        padding-bottom: 3vw;
+
+    img {
+        width: 8vw;
+    }
+
+    .footer-container{
+        .respons-div{
+            display: flex;
+            flex-direction: column;
+        }
+        padding: 10vw 3vw;
+        width: 100vw;
+        flex-direction: column;
+        .left-footer
+        {
+            width: 100%;
+        }
+        .middle-footer,
+        .right-footer{
+            width: 80%;
+        }
+        h3{
+            margin-bottom: 4vw;
+        }
+        .left-footer{
+            p{
+                font-size: 3vw;
+                line-height: 5vw;
+
+            }
+            .media-icon{
+                color: white;
+                font-size: 3.3vw;
+                margin: 5vw 6vw 5vw 1vw;
+            }
+           
+        }
+        .middle-footer{
+            .latest-blog1,
+            .latest-blog2{
+                display: flex;
+                align-items: center;
+                padding-bottom: 6vw;
+                gap: 1vw;
+
+                img{
+                    width: 15vw;
+                    margin: 0 6vw 0 0;
+                }
+                .first-blog{
+                    p{
+                        font-size: 3.7vw;
+                        line-height: 5vw;
+                    }
+                }
+                .first-blog-icons{
+                    gap: 2vw;
+                    display: flex;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        gap: 1.5vw;
+                        p{
+                            font-size: 3vw;
+                        }
+                        .latest-icon{
+                            font-size: 4.5vw;
+                        }
+                    }
+                }
+            }
+        }
+        .right-footer{
+           
+            p.date1,
+            .date2{
+                    font-size: 3.2vw;
+                    margin-top: 1vw; 
+                }
+                p.date1{
+                    margin-top: 4vw;
+                }
+            div{
+                gap: 3vw;
+                margin-bottom: 2vw;
+                
+                .contact-icon{
+                    color: white;
+                    font-size: 4.5vw;
+                }
+                p{
+                    font-size: 3.3vw;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
+    .copyRight {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 2.6vw;
+        a{
+            color: #263F71;
+
+        }
+    }
+}
 }

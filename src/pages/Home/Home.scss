@@ -16,6 +16,7 @@
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
       .filter form {
+        width: 100%;
         display: flex;
         justify-content: space-between;
 
@@ -72,14 +73,14 @@
   }
 
   .fourth-sec {
-    width: 100%;
+    width: 100vw;
     position: relative;
 
     .fourth-sec-container {
       overflow: hidden;
 
       img {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         object-fit: cover;
         object-position: right;
@@ -221,11 +222,12 @@
   }
 
   .eighth-sec {
-    width: 100%;
+    height: 20vw;
     display: flex;
     flex-wrap: wrap;
 
     img {
+    object-fit: cover;
       width: 20%;
     }
   }
@@ -240,7 +242,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 992px) {
   .container {
     .home {
       .second-sec {
