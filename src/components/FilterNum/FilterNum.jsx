@@ -9,26 +9,26 @@ const FilterNum = ({ classname }) => {
             </label>
             <div className="radio-group">
                 <div className="radio-wrapper">
-                    <label htmlFor="" class="radio-label">
+                    <label htmlFor="" className="radio-label">
                         <span>1</span>
-                        <input type="radio" name="option" class="custom-radio" />
+                        <input type="radio" name="option" className="custom-radio" />
                     </label>
                 </div>
                 <div className="radio-wrapper">
-                    <label htmlFor="" class="radio-label">
+                    <label htmlFor="" className="radio-label">
                         <span>2</span>
-                        <input type="radio" name="option" class="custom-radio" />
+                        <input type="radio" name="option" className="custom-radio" />
                     </label>
                 </div>
                 <div className="radio-wrapper">
-                    <label htmlFor="" class="radio-label">
+                    <label htmlFor="" className="radio-label">
                         <span>3</span>
-                        <input type="radio" name="option" class="custom-radio" />
+                        <input type="radio" name="option" className="custom-radio" />
                     </label>
                 </div><div className="radio-wrapper">
                     <label htmlFor="" class="radio-label">
                         <span>4+</span>
-                        <input type="radio" name="option" class="custom-radio" />
+                        <input type="radio" name="option" className="custom-radio" />
                     </label>
                 </div>
             </div>

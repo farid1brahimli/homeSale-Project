@@ -93,7 +93,7 @@
 }
 
 @media (min-width:480px) and (max-width:992px) {
-    section{
+    .contact-second-sec{
 
     .contact-form{
         width: 100vw;
@@ -154,7 +154,7 @@
 }
 
 @media (max-width:479px) {
-  section{
+  .contact-second-sec{
 
     .contact-form{
         width: 100vw;
@@ -192,7 +192,7 @@
         .contact-details{
             width: 100%;
                     p.date1,
-                    .date2{
+                    p.date2{
                             font-size: 3vw;
                             margin-top: 1vw; 
                         }
